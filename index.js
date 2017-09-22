@@ -72,7 +72,7 @@ var itemInCart = false;
         cart = inspectedItems.concat(remainingItems);
      }
    }
-   if (!itemInCart)
+   if (!itemInCart) {
     console.log ("That item is not in your cart.")
   }
   return cart
