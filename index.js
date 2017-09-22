@@ -24,42 +24,42 @@ function viewCart() {
   var key
 
   if(cart.length === 0){
-    console.log("Your shopping cart is empty.")
+    console.log("Your shopping cart is empty.");
   } else if (cart.length === 1){
-    firstItem  = cart[0]
-    firstKey  = Object.keys(firstItem)[0]
-    console.log(`In your cart, you have ${firstKey} at $${firstItem[firstKey]}.`)
+    firstItem  = cart[0];
+    firstKey  = Object.keys(firstItem)[0];
+    console.log(`In your cart, you have ${firstKey} at $${firstItem[firstKey]}.`);
   } else if (cart.length === 2){
-    firstItem  = cart[0]
-    firstKey  = Object.keys(firstItem)[0]
-    secondItem = cart[1]
-    secondKey = Object.keys(secondItem)[0]
+    firstItem  = cart[0];
+    firstKey  = Object.keys(firstItem)[0];
+    secondItem = cart[1];
+    secondKey = Object.keys(secondItem)[0];
     console.log( `In your cart, you have ${firstKey} at $${firstItem[firstKey]} and ${secondKey} at $${secondItem[secondKey]}.`);
   } else {
-    var longList = "In your cart, you have "
+    var longList = "In your cart, you have ";
     for(var i=0; i < cart.length-1; i++){
-      item = cart[i]
-      key = Object.keys(item)[0]
+      item = cart[i]0;
+      key = Object.keys(item)[0];
       longList = longList + `${key} at $${item[key]}, `;
     }
-    item = cart[cart.length-1]
-    key = Object.keys(item)[0]
-    longList = longList + `and ${key} at $${item[key]}.`
-    console.log(longList)
+    item = cart[cart.length-1];
+    key = Object.keys(item)[0];
+    longList = longList + `and ${key} at $${item[key]}.`;
+    console.log(longList);
   }
 }
 
 
 function total() {
-var item
-var key
+var item;
+var key;
 var sum = 0
   for(var i=0; i < cart.length; i++) {
-    item = cart[i]
-    key = Object.keys(item)[0]
-    sum = sum + item[key]
+    item = cart[i];
+    key = Object.keys(item)[0];
+    sum = sum + item[key];
   }
-  return sum
+  return sum;
 }
 
 function removeFromCart(item) {
