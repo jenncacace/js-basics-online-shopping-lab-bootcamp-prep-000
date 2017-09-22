@@ -63,13 +63,13 @@ var sum = 0
 }
 
 function removeFromCart(item) {
-var itemInCart = false;  
-   for (var i = 0; i < cart.length; i++){		    
+var itemInCart = false;
+   for (var i = 0; i < cart.length; i++){
      if (cart[i].hasOwnProperty(item)) {
         itemInCart = true;
         inspectedItems = cart.slice(0, i);
         remainingItems = cart.slice(i + 1);
-        cart = inspectedItems.concat(remainingItems);	  
+        cart = inspectedItems.concat(remainingItems);
      }
    }
    if (!itemInCart)
