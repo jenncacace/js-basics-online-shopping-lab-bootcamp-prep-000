@@ -67,8 +67,8 @@ let isItemInCart = false
   for (var i = 0; i < cart.length; i++){
     if (cart[i].hasOwnProperty(item) === true) {
       cart = cart.splice(0, i) + cart.slice (i+1)
-    } 
-    
+    }
+
     if (!isItemInCart){
     console.log("The item is not in your cart.")
   }
