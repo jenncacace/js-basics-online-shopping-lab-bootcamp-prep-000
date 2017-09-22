@@ -65,8 +65,9 @@ var sum = 0
 function removeFromCart(item) {
 let isItemInCart = false
   for (var i = 0; i < cart.length; i++){
-    if (cart[i].hasOwnProperty(item) === true) {
-      cart = cart.splice(0, i) + cart.slice (i+1)
+    if (cart[i].hasOwnProperty(item)) {
+      isItemInCart = true
+      cart = cart.splice(0, i).concat(cart.slice (i+1))
     }
 
     if (!isItemInCart){
