@@ -78,4 +78,6 @@ function placeOrder(cardNumber) {
 //addToCart("banana")
 //addToCart("apple")
 //addToCart("muffins")
-viewCart()
+viewCart() {
+  
+}
