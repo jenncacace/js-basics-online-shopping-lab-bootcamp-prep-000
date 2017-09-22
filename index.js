@@ -38,7 +38,7 @@ function viewCart() {
   } else {
     var longList = "In your cart, you have ";
     for(var i=0; i < cart.length-1; i++){
-      item = cart[i]0;
+      item = cart[i];
       key = Object.keys(item)[0];
       longList = longList + `${key} at $${item[key]}, `;
     }
