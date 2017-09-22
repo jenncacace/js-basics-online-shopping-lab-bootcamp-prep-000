@@ -66,7 +66,6 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++){
     if (Object.keys(cart[i])[0] === item) {
       return cart.shift()
-    }
   } else {
     return "The item is not in your cart."
   }
