@@ -70,7 +70,7 @@ let isItemInCart = false
     }
 
     if (!isItemInCart){
-    console.log("The item is not in your cart.")
+    console.log("That item is not in your cart.")
   }
   return cart
   }
