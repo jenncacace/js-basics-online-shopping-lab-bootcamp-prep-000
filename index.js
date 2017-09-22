@@ -63,6 +63,7 @@ var sum = 0
 }
 
 function removeFromCart(item) {
+}
 
 function placeOrder(cardNumber) {
   if (!cardNumber){
