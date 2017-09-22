@@ -74,10 +74,3 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-
-//addToCart("banana")
-//addToCart("apple")
-//addToCart("muffins")
-viewCart() {
-  // write your code here
-}
