@@ -63,18 +63,21 @@ var sum = 0
 }
 
 function removeFromCart(item) {
-let isItemInCart = false
-  for (var i = 0; i < cart.length; i++){
-    if (cart[i].hasOwnProperty(item)) {
-      isItemInCart = true
-      cart = cart.splice(0, i).concat(cart.slice (i+1))
-    }
+  let itemInCart = false;
 
-    if (!isItemInCart){
-    console.log("That item is not in your cart.")
+  for (let i = 0, l = cart.length; i < l; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      itemInCart = true;
+      cart = cart.slice(0, i).concat(cart.slice(i + 1));
+      l--;
+    }
   }
-  return cart
+
+  if (!itemInCart) {
+    console.log("That item is not in your cart.");
   }
+
+  return cart;
 }
 
 function placeOrder(cardNumber) {
