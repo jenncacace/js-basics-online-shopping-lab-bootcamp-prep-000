@@ -79,5 +79,5 @@ function placeOrder(cardNumber) {
 //addToCart("apple")
 //addToCart("muffins")
 viewCart() {
-
+  // write your code here
 }
